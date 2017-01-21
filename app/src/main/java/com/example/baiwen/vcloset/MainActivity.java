@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.provider.MediaStore;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
@@ -52,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
         final Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -65,10 +70,13 @@ public class MainActivity extends AppCompatActivity {
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent TakenPhoto = new Intent(MainActivity.this, PhotoViewer.class);
                 startActivity(takePicture);
                 startActivity(TakenPhoto);
                 dispatchTakePictureIntent();
+
+
 
             }
         });
@@ -78,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent GalleryPhoto = new Intent(MainActivity.this, PhotoViewer.class);
+
                 startActivity(GalleryPhoto);
 
                 startActivity(pickPhoto);
@@ -141,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
                 photoFile = createImageFile();
             } catch (IOException ex) {
                 // Error occurred while creating the File
-               // ...
+                // ...
             }
             // Continue only if the File was successfully created
             if (photoFile != null) {
@@ -154,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
- 
+
 
 
 }

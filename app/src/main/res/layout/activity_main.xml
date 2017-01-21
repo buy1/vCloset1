@@ -37,16 +37,6 @@
         app:rippleColor="?android:attr/colorBackgroundCacheHint" />
 
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pagerMain"
-        android:layout_width="wrap_content"
-        android:layout_height="246dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center">
-    </android.support.v4.view.ViewPager>
-
     <Button
         android:text="Outfit"
         android:id="@+id/button"
@@ -54,6 +44,8 @@
         android:layout_height="65dp"
         android:layout_width="128dp"
         android:theme="@style/MyButton"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/fab_margin"
         android:elevation="0dp"
         style="@style/MyButton" />
 
@@ -61,7 +53,9 @@
         android:text="Avatar"
         android:layout_height="65dp"
         android:id="@+id/button2"
+        android:layout_margin="@dimen/fab_margin"
         android:layout_gravity="bottom|right"
+        android:backgroundTint="@color/white"
         android:layout_width="128dp"
         android:theme="@style/MyButton"
         style="@style/MyButton" />
@@ -74,6 +68,16 @@
         android:layout_gravity="top|right"
         app:backgroundTint="@android:color/transparent"
         android:layout_height="71dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center">
+    </android.support.v4.view.ViewPager>
 
 
 </android.support.design.widget.CoordinatorLayout>
