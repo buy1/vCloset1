@@ -22,14 +22,14 @@ public class MainActivity extends AppCompatActivity {
 
         final Intent pickPhoto= new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
-       FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
+       FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(takePicture);
             }
         });
-        FloatingActionButton importPhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
+        FloatingActionButton importPhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
         importPhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
