@@ -43,7 +43,15 @@
         android:id="@+id/floatingActionButton10"
         android:layout_gravity="right|center" />
 
-<<<<<<< HEAD
+android:layout_height="match_parent"
+
+        android:layout_height="match_parent"<android:layout_width="match_parent"="match_parent" />
+
+        android:layout_width="match_parent"<android:layout_height="match_parent"="match_parent"="match_parent" />
+
+        android:layout_height="match_parent"
+
+        android:layout_height="match_parent"< android:layout_width="match_parent"="match_parent" />< android:layout_width="match_parent" /><<< HEAD
     <Button
         android:text="Avatar"
         android:layout_height="78dp"
