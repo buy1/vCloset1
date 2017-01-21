@@ -70,10 +70,7 @@ public class MainActivity extends AppCompatActivity {
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent TakenPhoto = new Intent(MainActivity.this, PhotoViewer.class);
-
-                startActivity(takePicture);
-                startActivity(TakenPhoto);
+                
                 dispatchTakePictureIntent();
 
             }
