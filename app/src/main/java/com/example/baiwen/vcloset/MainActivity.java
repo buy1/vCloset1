@@ -64,7 +64,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
+
+=======
         init();
+>>>>>>> d5e59cb29fc444422f1ef385956629ad41dd2239
     }
 
     @Override

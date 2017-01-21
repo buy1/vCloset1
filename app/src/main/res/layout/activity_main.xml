@@ -43,7 +43,32 @@
         android:id="@+id/floatingActionButton10"
         android:layout_gravity="right|center" />
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+android:layout_height="match_parent"
+
+        android:layout_height="match_parent"<android:layout_width="match_parent"="match_parent" />
+
+        android:layout_width="match_parent"<android:layout_height="match_parent"="match_parent"="match_parent" />
+
+        android:layout_height="match_parent"
+
+        android:layout_height="match_parent"< android:layout_width="match_parent"="match_parent" />< android:layout_width="match_parent" /><<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> d5e59cb29fc444422f1ef385956629ad41dd2239
+    <Button
+        android:text="Avatar"
+        android:layout_height="78dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="195dp" />
+>>>>>>> eb8611523c0fd75a63589f5ac60bf451382d503e
 
 
     <!--<Button-->
