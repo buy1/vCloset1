@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(takePicture);
-                startActivity(new Intent(MainActivity.this, editPhoto.class));
-
+                
             }
         });
         FloatingActionButton importPhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
