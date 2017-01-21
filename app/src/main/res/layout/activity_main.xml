@@ -19,7 +19,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay"
         android:background="@android:color/darker_gray">
 
@@ -43,6 +43,8 @@
         android:id="@+id/floatingActionButton10"
         android:layout_gravity="right|center" />
 
+<<<<<<< HEAD
+=======
 
     <Button
         android:text="Avatar"
@@ -52,6 +54,7 @@
         android:backgroundTint="@android:color/holo_blue_dark"
         android:layout_width="195dp" />
 
+>>>>>>> 610b4400e9ae4936b10422f757c68a1d3ec8f8b9
     <Button
         android:text="Outfit"
         android:id="@+id/button"
@@ -69,5 +72,16 @@
         android:layout_gravity="top|left"
         app:backgroundTint="@android:color/holo_blue_dark" />
 
+<<<<<<< HEAD
+    <Button
+        android:text="Avatar"
+        android:layout_height="78dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="195dp" />
+    >>>>>>> 3905645265ea1cd9994aca3479e220c92a1becd3
+=======
+>>>>>>> 610b4400e9ae4936b10422f757c68a1d3ec8f8b9
 
 </android.support.design.widget.CoordinatorLayout>
