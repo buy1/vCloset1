@@ -20,6 +20,8 @@ public class OutfitChoice extends AppCompatActivity {
 
         ViewPager viewPagerShoes = (ViewPager) findViewById(R.id.pagershoes);
         viewPagerShoes.setAdapter(new CustomPagerAdapter(this));
+
+        
     }
 
 
