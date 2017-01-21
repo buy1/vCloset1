@@ -10,8 +10,32 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 import android.provider.MediaStore;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    public Button button1;
+    public Button button2;
+
+    public void init(){
+        button1 = (Button)findViewById(R.id.button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent show = new Intent(MainActivity.this, GalleryOfClothing.class);
+            }
+        });
+
+        button2 = (Button)findViewById(R.id.button2);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent choice = new Intent(MainActivity.this, OutfitChoice.class);
+            }
+        });
+    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +63,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
+=======
+        init();
+>>>>>>> d5e59cb29fc444422f1ef385956629ad41dd2239
     }
 
     @Override
