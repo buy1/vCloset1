@@ -8,15 +8,6 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.baiwen.vcloset.MainActivity">
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
-        android:layout_width="69dp"
-        android:layout_height="72dp"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/blackcamaraicon"
-        android:layout_gravity="top|right"
-        app:backgroundTint="@android:color/transparent" />
-
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -24,15 +15,6 @@
         android:background="@android:color/darker_gray">
 
     </android.support.design.widget.AppBarLayout>
-
-    <Button
-        android:text="Avatar"
-        android:layout_height="78dp"
-        android:id="@+id/button1"
-        android:layout_gravity="bottom|right"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:layout_width="195dp" />
-
 
 
     <!--<Button-->
@@ -55,14 +37,6 @@
         app:rippleColor="?android:attr/colorBackgroundCacheHint" />
 
 
-    <Button
-        android:text="Avatar"
-        android:layout_height="78dp"
-        android:id="@+id/button2"
-        android:layout_gravity="bottom|right"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:layout_width="195dp" />
-
     <android.support.v4.view.ViewPager
         android:id="@+id/pagerMain"
         android:layout_width="wrap_content"
@@ -77,9 +51,29 @@
         android:text="Outfit"
         android:id="@+id/button"
         android:layout_gravity="bottom|left"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:layout_height="78dp"
-        android:layout_width="195dp" />
+        android:layout_height="65dp"
+        android:layout_width="128dp"
+        android:theme="@style/MyButton"
+        android:elevation="0dp"
+        style="@style/MyButton" />
+
+    <Button
+        android:text="Avatar"
+        android:layout_height="65dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|right"
+        android:layout_width="128dp"
+        android:theme="@style/MyButton"
+        style="@style/MyButton" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="69dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/blackcamaraicon"
+        android:layout_gravity="top|right"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_height="71dp" />
 
 
 </android.support.design.widget.CoordinatorLayout>
