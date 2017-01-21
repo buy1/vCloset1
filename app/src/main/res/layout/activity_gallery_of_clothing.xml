@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Fuck Baiwen For Real"
+        android:text="Hello Baiwen"
         android:ems="10"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
