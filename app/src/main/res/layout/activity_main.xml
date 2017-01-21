@@ -10,12 +10,12 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_camera"
+        app:srcCompat="@drawable/blackcamaraicon"
         android:layout_gravity="top|right"
-        app:backgroundTint="@android:color/holo_blue_dark" />
+        app:backgroundTint="@android:color/transparent" />
 
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
@@ -46,12 +46,13 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/sym_contact_card"
+        app:srcCompat="@drawable/blackfileicon"
         android:layout_gravity="top|left"
-        app:backgroundTint="@android:color/holo_blue_dark" />
+        app:backgroundTint="@android:color/transparent"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        app:rippleColor="?android:attr/colorBackgroundCacheHint" />
 
 
     <Button
