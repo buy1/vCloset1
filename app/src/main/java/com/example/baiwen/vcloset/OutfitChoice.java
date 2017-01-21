@@ -29,8 +29,8 @@ public class OutfitChoice extends AppCompatActivity {
         changeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent TakenPhoto = new Intent(OutfitChoice.this, PhotoViewer.class);
-                //should start new activity that lets you pick avatars
+                Intent Avatar = new Intent(OutfitChoice.this, AvatarChoice.class);
+                startActivity(Avatar);
             }
         });
     }
