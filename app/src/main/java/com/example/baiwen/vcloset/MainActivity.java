@@ -2,6 +2,7 @@ package com.example.baiwen.vcloset;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Menu;
@@ -47,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
         final Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
         final Intent pickPhoto= new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+
+        ViewPager viewPagerMain = (ViewPager) findViewById(R.id.pagerMain);
+        viewPagerMain.setAdapter(new MainPagerAdapter(this));
 
        FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
         takePhotoButton.setOnClickListener(new View.OnClickListener() {

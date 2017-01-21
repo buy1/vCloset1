@@ -24,6 +24,7 @@ public class OutfitChoice extends AppCompatActivity {
         ViewPager viewPagerShoes = (ViewPager) findViewById(R.id.pagershoes);
         viewPagerShoes.setAdapter(new CustomPagerAdapter(this));
 
+
         FloatingActionButton changeAvatar = (FloatingActionButton) findViewById(R.id.floatingActionButtonAvatar);
         changeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
