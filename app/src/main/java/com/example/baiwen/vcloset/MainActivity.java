@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(pickPhoto);
             }
         });
-
+        init();
     }
 
     @Override
