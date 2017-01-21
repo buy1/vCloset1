@@ -10,4 +10,6 @@ public class PhotoViewer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_viewer);
     }
+
+
 }
