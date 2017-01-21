@@ -37,16 +37,6 @@
         app:rippleColor="?android:attr/colorBackgroundCacheHint" />
 
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pagerMain"
-        android:layout_width="wrap_content"
-        android:layout_height="246dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center">
-    </android.support.v4.view.ViewPager>
-
     <Button
         android:text="Outfit"
         android:id="@+id/button"
@@ -78,6 +68,16 @@
         android:layout_gravity="top|right"
         app:backgroundTint="@android:color/transparent"
         android:layout_height="71dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerMain"
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center">
+    </android.support.v4.view.ViewPager>
 
 
 </android.support.design.widget.CoordinatorLayout>
