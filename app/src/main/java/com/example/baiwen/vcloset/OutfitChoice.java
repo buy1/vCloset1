@@ -25,12 +25,21 @@ public class OutfitChoice extends AppCompatActivity {
         viewPagerShoes.setAdapter(new CustomPagerAdapter(this));
 
 
-        FloatingActionButton changeAvatar = (FloatingActionButton) findViewById(R.id.floatingActionButtonAvatar);
+        FloatingActionButton changeAvatar = (FloatingActionButton) findViewById(R.id.Avatar);
         changeAvatar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent Avatar = new Intent(OutfitChoice.this, AvatarChoice.class);
                 startActivity(Avatar);
+            }
+        });
+
+        FloatingActionButton confirmOk = (FloatingActionButton) findViewById(R.id.Ok);
+        confirmOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Ok = new Intent(OutfitChoice.this, ImageCropping.class);
+                startActivity(Ok);
             }
         });
     }
