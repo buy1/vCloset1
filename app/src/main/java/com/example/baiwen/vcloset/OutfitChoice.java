@@ -12,9 +12,14 @@ public class OutfitChoice extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_outfit_choice);
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        viewPager.setAdapter(new CustomPagerAdapter(this));
+        ViewPager viewPagertop = (ViewPager) findViewById(R.id.pagertop);
+        viewPagertop.setAdapter(new CustomPagerAdapter(this));
 
+        ViewPager viewPagerBottom = (ViewPager) findViewById(R.id.pagerbottom);
+        viewPagerBottom.setAdapter(new CustomPagerAdapter(this));
+
+        ViewPager viewPagerShoes = (ViewPager) findViewById(R.id.pagershoes);
+        viewPagerShoes.setAdapter(new CustomPagerAdapter(this));
     }
 
 
