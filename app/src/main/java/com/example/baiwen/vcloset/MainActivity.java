@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.content.Intent;
 import android.provider.MediaStore;
 import android.widget.Button;
+import android.graphics.Bitmap;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,19 +52,26 @@ public class MainActivity extends AppCompatActivity {
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent TakenPhoto = new Intent(MainActivity.this, PhotoViewer.class);
+                startActivity(TakenPhoto);
+
                 startActivity(takePicture);
-                
             }
         });
+
         FloatingActionButton importPhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
         importPhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent GalleryPhoto = new Intent(MainActivity.this, PhotoViewer.class);
+                startActivity(GalleryPhoto);
+
                 startActivity(pickPhoto);
             }
         });
 
         init();
+
     }
 
     @Override
@@ -85,5 +94,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+
     }
 }

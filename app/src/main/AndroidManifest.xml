@@ -21,7 +21,8 @@
             android:name=".editPhoto"
             android:label="@string/editPhoto" />
         <activity android:name=".GalleryOfClothing" />
-        <activity android:name=".OutfitChoice"></activity>
+        <activity android:name=".OutfitChoice" />
+        <activity android:name=".PhotoViewer"></activity>
     </application>
 
 </manifest>
