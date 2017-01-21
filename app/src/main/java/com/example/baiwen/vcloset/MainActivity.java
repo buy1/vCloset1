@@ -19,10 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         final Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(takePicture, 0);
 
         final Intent pickPhoto= new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(pickPhoto, 1);
 
        FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton5);
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
