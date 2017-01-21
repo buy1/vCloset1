@@ -23,14 +23,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent show = new Intent(MainActivity.this, GalleryOfClothing.class);
+                startActivity(show);
             }
         });
 
         button2 = (Button)findViewById(R.id.button2);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent choice = new Intent(MainActivity.this, OutfitChoice.class);
+                startActivity(choice);
             }
         });
     }
