@@ -52,4 +52,20 @@
         android:id="@+id/floatingActionButton10"
         android:layout_gravity="right|center" />
 
+    <Button
+        android:text="Avatar"
+        android:layout_height="78dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="195dp" />
+
+    <Button
+        android:text="Outfit"
+        android:id="@+id/button"
+        android:layout_gravity="bottom|left"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_height="78dp"
+        android:layout_width="195dp" />
+
 </android.support.design.widget.CoordinatorLayout>
