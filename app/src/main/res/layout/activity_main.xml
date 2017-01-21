@@ -26,15 +26,6 @@
     </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/sym_contact_card"
-        android:layout_gravity="top|left"
-        app:backgroundTint="@android:color/holo_blue_dark" />
-
-    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
@@ -51,5 +42,32 @@
         app:srcCompat="@android:drawable/ic_media_ff"
         android:id="@+id/floatingActionButton10"
         android:layout_gravity="right|center" />
+
+<<<<<<< HEAD
+    <Button
+        android:text="Avatar"
+        android:layout_height="78dp"
+        android:id="@+id/button2"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_width="195dp" />
+
+    <Button
+        android:text="Outfit"
+        android:id="@+id/button"
+        android:layout_gravity="bottom|left"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_height="78dp"
+        android:layout_width="195dp" />
+=======
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/sym_contact_card"
+        android:layout_gravity="top|left"
+        app:backgroundTint="@android:color/holo_blue_dark" />
+>>>>>>> 3905645265ea1cd9994aca3479e220c92a1becd3
 
 </android.support.design.widget.CoordinatorLayout>
