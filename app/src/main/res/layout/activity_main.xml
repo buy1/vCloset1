@@ -8,21 +8,30 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.baiwen.vcloset.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-    </android.support.design.widget.AppBarLayout>
-
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/floatingActionButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_menu_add"
-        app:layout_anchorGravity="bottom|center_horizontal"
         android:layout_gravity="top|right"
-        app:backgroundTint="@android:color/darker_gray" />
+        app:backgroundTint="@android:color/holo_blue_dark" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@android:color/darker_gray">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_preferences"
+        android:layout_gravity="top|left"
+        app:backgroundTint="@android:color/holo_blue_dark" />
 
 </android.support.design.widget.CoordinatorLayout>
