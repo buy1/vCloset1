@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_add"
+        app:srcCompat="@android:drawable/ic_menu_camera"
         android:layout_gravity="top|right"
         app:backgroundTint="@android:color/holo_blue_dark" />
 
@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_menu_preferences"
+        app:srcCompat="@android:drawable/sym_contact_card"
         android:layout_gravity="top|left"
         app:backgroundTint="@android:color/holo_blue_dark" />
 
