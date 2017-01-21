@@ -43,7 +43,8 @@
         </provider>
 
         <activity android:name=".AvatarChoice" />
-        <activity android:name=".ImageCropping"></activity>
+        <activity android:name=".ImageCropping" />
+        <activity android:name=".CategorizingScreen"></activity>
     </application>
 
 </manifest>
