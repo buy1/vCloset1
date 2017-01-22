@@ -21,14 +21,13 @@ public class OutfitChoice extends AppCompatActivity {
         RelativeLayout rLayout = (RelativeLayout) findViewById (R.id.fittingroom);
         Resources res = getResources(); //resource handle
         Drawable drawable = res.getDrawable(R.drawable.sota1); //new Image that was added to the res folder
-
         rLayout.setBackground(drawable);
 
         ViewPager viewPagertop = (ViewPager) findViewById(R.id.pagertop);
         viewPagertop.setAdapter(new CustomPagerAdapter(this));
 
         ViewPager viewPagerBottom = (ViewPager) findViewById(R.id.pagerbottom);
-        viewPagerBottom.setAdapter(new CustomPagerAdapter(this));
+        viewPagerBottom.setAdapter(new CustomPagerAdapterBottom(this));
 
         FloatingActionButton confirmOk = (FloatingActionButton) findViewById(R.id.Ok);
         confirmOk.setOnClickListener(new View.OnClickListener() {

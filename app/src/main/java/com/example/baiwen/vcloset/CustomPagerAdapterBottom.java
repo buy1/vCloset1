@@ -9,20 +9,18 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 /**
- * Created by Hinako on 1/21/2017.
+ * Created by Justin on 1/21/17.
  */
 
-class CustomPagerAdapter extends PagerAdapter {
-
+public class CustomPagerAdapterBottom extends PagerAdapter {
     Context mContext;
     LayoutInflater mLayoutInflater;
     int[] mResources = {
-            R.drawable.redshirt,
-            R.drawable.cat2,
-            R.drawable.greyshirt
+            R.drawable.sota1,
+            R.drawable.man
     };
 
-    public CustomPagerAdapter(Context context) {
+    public CustomPagerAdapterBottom(Context context) {
         mContext = context;
         mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
