@@ -16,8 +16,9 @@ public class CustomPagerAdapterBottom extends PagerAdapter {
     Context mContext;
     LayoutInflater mLayoutInflater;
     int[] mResources = {
-            R.drawable.BlackPants,
-            //R.drawable.man
+            R.drawable.blackpants,
+            R.drawable.khakipants,
+            R.drawable.shorts
     };
 
     public CustomPagerAdapterBottom(Context context) {

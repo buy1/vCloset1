@@ -17,9 +17,9 @@ class CustomPagerAdapter extends PagerAdapter {
     Context mContext;
     LayoutInflater mLayoutInflater;
     int[] mResources = {
-            R.drawable.BlackShirtTop,
-            R.drawable.CrossGuardTop,
-            //R.drawable.greyshirt
+            R.drawable.whiteshirt,
+            R.drawable.orangeshirt,
+            R.drawable.blackshirt
     };
 
     public CustomPagerAdapter(Context context) {

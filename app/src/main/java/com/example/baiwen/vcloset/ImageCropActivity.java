@@ -25,10 +25,7 @@ public class ImageCropActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_crop_activity);
 
-<<<<<<< HEAD
         Intent intent=getIntent();
-=======
->>>>>>> f2a3e19d90af8e68647d0851760f9be293fb4e36
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             crop = extras.getBoolean("crop");

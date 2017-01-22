@@ -194,18 +194,14 @@ public class MainActivity extends AppCompatActivity {
 
                     Bitmap photo = (Bitmap) data.getExtras().get("data");
 
-<<<<<<< HEAD
                     //Intent imageCrop = new Intent(this, ImageCropActivity.class);
                     Intent imageCrop = new Intent(this, PhotoViewer.class);
                     imageCrop.putExtra("bitmapimage", photo);
                     startActivity(imageCrop);
-=======
                     Intent photoView = new Intent(this, PhotoViewer.class);
                     photoView.putExtra("bitmapimage", photo);
                     startActivity(photoView);
->>>>>>> f2a3e19d90af8e68647d0851760f9be293fb4e36
                     // Setting image image icon on the imageview
-
 
 
                     break;
