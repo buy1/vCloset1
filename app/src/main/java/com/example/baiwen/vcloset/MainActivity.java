@@ -75,9 +75,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(takePicture);
                 startActivity(TakenPhoto);
                 dispatchTakePictureIntent();
-
-
-
             }
         });
 

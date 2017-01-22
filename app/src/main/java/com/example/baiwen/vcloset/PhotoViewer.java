@@ -8,11 +8,11 @@ import android.widget.Button;
 
 public class PhotoViewer extends AppCompatActivity {
 
-    public Button button;
+    public Button button1;
 
     public void init(){
-        button = (Button)findViewById(R.id.buttonC);
-        button.setOnClickListener(new View.OnClickListener() {
+        button1 = (Button)findViewById(R.id.buttonC);
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent categorize = new Intent(PhotoViewer.this, CategorizingScreen.class);

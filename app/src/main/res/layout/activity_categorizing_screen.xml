@@ -10,14 +10,40 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.baiwen.vcloset.CategorizingScreen">
 
-    <TextView
-        android:text="Categorize Clothing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:text="Top"
+        android:layout_width="match_parent"
+        android:id="@+id/top"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="54dp"
-        android:layout_marginStart="54dp"
-        android:id="@+id/textView2" />
+        android:layout_height="85dp" />
+
+    <Button
+        android:text="Accessories"
+        android:layout_width="match_parent"
+        android:id="@+id/accessories"
+        android:layout_below="@+id/top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="85dp" />
+
+    <Button
+        android:text="Bottom"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_below="@+id/accessories"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="85dp" />
+
+    <Button
+        android:text="Shoes"
+        android:layout_width="match_parent"
+        android:id="@+id/shoes"
+        android:layout_below="@+id/bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="85dp" />
+
 </RelativeLayout>

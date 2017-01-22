@@ -38,7 +38,7 @@
 
 
     <Button
-        android:text="Outfit"
+        android:text="Closet"
         android:id="@+id/button"
         android:layout_gravity="bottom|left"
         android:layout_height="65dp"
@@ -50,7 +50,7 @@
         style="@style/MyButton" />
 
     <Button
-        android:text="Avatar"
+        android:text="Fitting Room"
         android:layout_height="65dp"
         android:id="@+id/button2"
         android:layout_margin="@dimen/fab_margin"
