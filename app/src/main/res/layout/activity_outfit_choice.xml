@@ -5,8 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:id="@+id/relativeLayout">
-
+    android:id="@+id/fittingroom">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pagertop"
@@ -18,17 +17,14 @@
     </android.support.v4.view.ViewPager>
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:id="@+id/Avatar"
-        android:layout_gravity="right|center"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerbottom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_alignParentBottom="true"
-        app:elevation="2dp"
-        app:fabSize="mini"
-        app:srcCompat="@drawable/humanmale"
-        android:layout_width="55dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v4.view.ViewPager>
 
     <android.support.design.widget.FloatingActionButton
         android:layout_height="wrap_content"
@@ -36,6 +32,12 @@
         app:fabSize="mini"
         app:srcCompat="@drawable/check"
         android:id="@+id/Ok"
+<<<<<<< HEAD
+        android:layout_width="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+=======
         android:layout_marginRight="13dp"
         android:layout_marginEnd="13dp"
         android:layout_alignTop="@+id/Avatar"
@@ -46,11 +48,12 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/pagerbottom"
         android:layout_width="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:layout_height="300dp"
         android:layout_alignParentBottom="true"
-        android:layout_height="300dp">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
     </android.support.v4.view.ViewPager>
+>>>>>>> 7d5e1174ecf7a46bb82139b8df0bd3e2cb58c0a7
 
 
 </RelativeLayout>

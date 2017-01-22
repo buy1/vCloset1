@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent show = new Intent(MainActivity.this, GalleryOfClothing.class);
+                Intent show = new Intent(MainActivity.this, AvatarChoice.class);
                 startActivity(show);
             }
         });
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent choice = new Intent(MainActivity.this, AvatarChoice.class);
+                Intent choice = new Intent(MainActivity.this, OutfitChoice.class);
                 startActivity(choice);
             }
         });
@@ -85,9 +86,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
                 Intent intent = getIntent();
                 intent.getIntExtra("topflag", topflag);
                 intent.getIntExtra("botflag", botflag);
+
 
                 dispatchTakePictureIntent();
             }
@@ -132,8 +135,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-
     private File createImageFile() throws IOException {
         // Create an image file name
 
@@ -177,8 +178,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
             }
         }
-
-
     }
 
     @Override
@@ -209,8 +208,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
-
-
-
 }
