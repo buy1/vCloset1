@@ -45,8 +45,8 @@ public class ImageCropActivity extends Activity {
 
         compositeImageView = (ImageView) findViewById(R.id.iv);
 
-        Bitmap bitmap2 = bitmap;//BitmapFactory.decodeResource(getResources(),
-               // R.drawable.pk);
+        Bitmap bitmap2 =BitmapFactory.decodeResource(getResources(),
+                R.drawable.pk);
 
         Bitmap resultingImage = Bitmap.createBitmap(widthOfscreen,
                 heightOfScreen, bitmap2.getConfig());
