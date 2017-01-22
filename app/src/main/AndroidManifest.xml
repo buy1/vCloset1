@@ -45,6 +45,7 @@
         <activity android:name=".AvatarChoice" />
         <activity android:name=".ImageCropping" />
         <activity android:name=".CategorizingScreen"></activity>
+        <activity android:name=".ImageCropActivity"/>
 
     </application>
 
