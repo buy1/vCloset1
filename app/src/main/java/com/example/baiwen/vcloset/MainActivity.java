@@ -4,6 +4,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.content.FileProvider;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.graphics.Bitmap;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
@@ -71,9 +73,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent TakenPhoto = new Intent(MainActivity.this, PhotoViewer.class);
-                startActivity(takePicture);
-                startActivity(TakenPhoto);
+
+                //startActivity(takePicture);
+                //startActivity(TakenPhoto);
                 dispatchTakePictureIntent();
             }
         });
@@ -154,9 +156,42 @@ public class MainActivity extends AppCompatActivity {
                 Uri photoURI = FileProvider.getUriForFile(this,
                         "com.example.baiwen.vcloset",
                         photoFile);
-                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoFile);
+
                 startActivityForResult(takePictureIntent, REQUEST_TAKE_PHOTO);
             }
+        }
+
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK) {
+
+            switch (requestCode) {
+                case REQUEST_TAKE_PHOTO:
+
+                    Bitmap photo = (Bitmap) data.getExtras().get("data");
+
+
+                    // Setting image image icon on the imageview
+
+                    ImageView imageView = (ImageView) this
+                            .findViewById(R.id.TestImage);
+
+                    imageView.setImageBitmap(photo);
+
+                    break;
+
+                default:
+                    Toast.makeText(this, "Something went wrong...",
+                            Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
         }
     }
 
