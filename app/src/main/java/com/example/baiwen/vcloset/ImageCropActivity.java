@@ -25,9 +25,6 @@ public class ImageCropActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_crop_activity);
 
-        Intent intent=getIntent();
-        Bitmap bitmap = intent.getParcelableExtra("bitmapimage");
-
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             crop = extras.getBoolean("crop");
