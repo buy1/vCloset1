@@ -32,12 +32,10 @@
         app:fabSize="mini"
         app:srcCompat="@drawable/check"
         android:id="@+id/Ok"
-<<<<<<< HEAD
         android:layout_width="55dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp" />
-=======
         android:layout_marginRight="13dp"
         android:layout_marginEnd="13dp"
         android:layout_alignTop="@+id/Avatar"
@@ -53,7 +51,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
     </android.support.v4.view.ViewPager>
->>>>>>> 7d5e1174ecf7a46bb82139b8df0bd3e2cb58c0a7
 
 
 </RelativeLayout>
