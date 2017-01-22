@@ -11,8 +11,6 @@ public class CategorizingScreen extends AppCompatActivity {
 
     public Button button1;
     public Button button2;
-    public Button button3;
-    public Button button4;
 
     public void init(){
         button1 = (Button)findViewById(R.id.top);
@@ -24,26 +22,8 @@ public class CategorizingScreen extends AppCompatActivity {
             }
         });
 
-        button2 = (Button)findViewById(R.id.accessories);
+        button2 = (Button)findViewById(R.id.bottom);
         button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent redirect = new Intent(CategorizingScreen.this, MainActivity.class);
-                startActivity(redirect);
-            }
-        });
-
-        button3 = (Button)findViewById(R.id.bottom);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent redirect = new Intent(CategorizingScreen.this, MainActivity.class);
-                startActivity(redirect);
-            }
-        });
-
-        button4 = (Button)findViewById(R.id.shoes);
-        button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent redirect = new Intent(CategorizingScreen.this, MainActivity.class);
