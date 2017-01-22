@@ -16,7 +16,7 @@ public class CustomPagerAdapterBottom extends PagerAdapter {
     Context mContext;
     LayoutInflater mLayoutInflater;
     int[] mResources = {
-            R.drawable.sota1,
+            R.drawable.cat1,
             R.drawable.man
     };
 

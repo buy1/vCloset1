@@ -20,12 +20,8 @@ public class OutfitChoice extends AppCompatActivity {
 
         RelativeLayout rLayout = (RelativeLayout) findViewById (R.id.fittingroom);
         Resources res = getResources(); //resource handle
-<<<<<<< HEAD
-        Drawable drawable = res.getDrawable(R.drawable.sota1); //new Image that was added to the res folder
-=======
         Drawable drawable = res.getDrawable(R.drawable.pk); //new Image that was added to the res folder
 
->>>>>>> bea0e60775b06f7c3992e7b72391d4ec0e0535fb
         rLayout.setBackground(drawable);
 
         ViewPager viewPagertop = (ViewPager) findViewById(R.id.pagertop);
