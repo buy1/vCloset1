@@ -17,8 +17,8 @@ class MainPagerAdapter extends PagerAdapter {
     Context mContext;
     LayoutInflater mLayoutInflater;
     int[] mResources = {
-            R.drawable.greyshirt,
-            R.drawable.redshirt
+            R.drawable.shirt1,
+            R.drawable.shirt2
     };
 
     public MainPagerAdapter(Context context) {

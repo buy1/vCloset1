@@ -8,13 +8,9 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.baiwen.vcloset.MainActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:background="@android:color/darker_gray">
-
-    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <!--<Button-->
         <!--android:text="Avatar"-->
@@ -25,58 +21,72 @@
         <!--android:layout_width="195dp" />-->
 
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton5"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/blackfileicon"
-        android:layout_gravity="top|left"
-        app:backgroundTint="@android:color/transparent"
-        android:layout_width="69dp"
-        android:layout_height="72dp"
-        app:rippleColor="?android:attr/colorBackgroundCacheHint" />
+        <Button
+            android:text="Categorize"
+            android:layout_height="65dp"
+            android:id="@+id/button3"
+            android:layout_gravity="top|center"
+            android:backgroundTint="@color/white"
+            android:theme="@style/MyButton"
+            style="@style/MyButton"
+            android:layout_width="65dp"
+            android:layout_alignTop="@+id/floatingActionButton5"
+            android:layout_alignRight="@+id/button2"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton5"
+            app:srcCompat="@drawable/blackfileicon"
+            android:layout_gravity="top|left"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            app:rippleColor="?android:attr/colorBackgroundCacheHint"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/pagerMain"
-        android:layout_width="wrap_content"
-        android:layout_height="246dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="center">
-    </android.support.v4.view.ViewPager>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton6"
+            android:layout_width="71dp"
+            app:srcCompat="@drawable/blackcamaraicon"
+            android:layout_gravity="top|right"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_height="71dp"
+            android:layout_alignTop="@+id/button3"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp" />
 
-    <Button
-        android:text="Categorize"
+        <Button
+        android:text="Fitting Room"
         android:layout_height="65dp"
-        android:id="@+id/button3"
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_gravity="top|center"
+        android:id="@+id/button2"
+            android:layout_gravity="bottom|right"
         android:backgroundTint="@color/white"
-        android:theme="@style/MyButton"
+            android:theme="@style/MyButton"
         style="@style/MyButton"
-        android:layout_width="65dp" />
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="19dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
-        android:layout_width="69dp"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/blackcamaraicon"
-        android:layout_gravity="top|right"
-        app:backgroundTint="@android:color/transparent"
-        android:layout_height="71dp" />
-
-    <Button
-    android:text="Fitting Room"
-    android:layout_height="65dp"
-    android:id="@+id/button2"
-    android:layout_margin="@dimen/fab_margin"
-    android:layout_gravity="bottom|right"
-    android:backgroundTint="@color/white"
-    android:layout_width="wrap_content"
-    android:theme="@style/MyButton"
-    style="@style/MyButton"
-        android:gravity="center_vertical|center_horizontal|center" />
+        <android.support.v4.view.ViewPager
+        android:id="@+id/pagerMain"
+        android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_above="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="75dp"
+            android:layout_height="300dp">
+    </android.support.v4.view.ViewPager>
+    </RelativeLayout>
 
 
 </android.support.design.widget.CoordinatorLayout>
