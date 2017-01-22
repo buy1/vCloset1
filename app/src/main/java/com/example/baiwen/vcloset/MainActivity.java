@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent choice = new Intent(MainActivity.this, OutfitChoice.class);
+                Intent choice = new Intent(MainActivity.this, AvatarChoice.class);
                 startActivity(choice);
             }
         });
