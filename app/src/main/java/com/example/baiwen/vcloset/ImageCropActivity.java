@@ -5,6 +5,7 @@ package com.example.baiwen.vcloset;
  */
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -24,6 +25,9 @@ public class ImageCropActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.image_crop_activity);
 
+        Intent intent=getIntent();
+        Bitmap bitmap = intent.getParcelableExtra("bitmapimage");
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             crop = extras.getBoolean("crop");
@@ -41,8 +45,8 @@ public class ImageCropActivity extends Activity {
 
         compositeImageView = (ImageView) findViewById(R.id.iv);
 
-        Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(),
-                R.drawable.pk);
+        Bitmap bitmap2 = bitmap;//BitmapFactory.decodeResource(getResources(),
+               // R.drawable.pk);
 
         Bitmap resultingImage = Bitmap.createBitmap(widthOfscreen,
                 heightOfScreen, bitmap2.getConfig());
