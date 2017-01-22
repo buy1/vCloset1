@@ -60,9 +60,7 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
-
-        final Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
+        
         final Intent pickPhoto= new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
         ViewPager viewPagerMain = (ViewPager) findViewById(R.id.pagerMain);
