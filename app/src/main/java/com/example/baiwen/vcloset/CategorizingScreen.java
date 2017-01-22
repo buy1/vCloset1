@@ -17,8 +17,9 @@ public class CategorizingScreen extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent redirect = new Intent(CategorizingScreen.this, MainActivity.class);
-                startActivity(redirect);
+                Intent redirect1 = new Intent(CategorizingScreen.this, MainActivity.class);
+                redirect1.putExtra("topflag", 1);
+                startActivity(redirect1);
             }
         });
 
@@ -26,8 +27,9 @@ public class CategorizingScreen extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent redirect = new Intent(CategorizingScreen.this, MainActivity.class);
-                startActivity(redirect);
+                Intent redirect2 = new Intent(CategorizingScreen.this, MainActivity.class);
+                redirect2.putExtra("botflag",1);
+                startActivity(redirect2);
             }
         });
     }

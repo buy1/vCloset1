@@ -49,15 +49,15 @@
         style="@style/MyButton" />
 
     <Button
-        android:text="Fitting Room"
-        android:layout_height="65dp"
-        android:id="@+id/button2"
-        android:layout_margin="@dimen/fab_margin"
-        android:layout_gravity="bottom|right"
-        android:backgroundTint="@color/white"
-        android:layout_width="128dp"
-        android:theme="@style/MyButton"
-        style="@style/MyButton" />
+    android:text="Fitting Room"
+    android:layout_height="65dp"
+    android:id="@+id/button2"
+    android:layout_margin="@dimen/fab_margin"
+    android:layout_gravity="bottom|right"
+    android:backgroundTint="@color/white"
+    android:layout_width="128dp"
+    android:theme="@style/MyButton"
+    style="@style/MyButton" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/floatingActionButton6"
@@ -78,7 +78,16 @@
         android:layout_gravity="center">
     </android.support.v4.view.ViewPager>
 
-
+    <Button
+        android:text="Categorize"
+        android:layout_height="65dp"
+        android:id="@+id/button3"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="top|center"
+        android:backgroundTint="@color/white"
+        android:theme="@style/MyButton"
+        style="@style/MyButton"
+        android:layout_width="65dp" />
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -17,7 +17,7 @@ public class PhotoViewer extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent categorize = new Intent(PhotoViewer.this, CategorizingScreen.class);
+                Intent categorize = new Intent(PhotoViewer.this, MainActivity.class);
                 startActivity(categorize);
             }
         });

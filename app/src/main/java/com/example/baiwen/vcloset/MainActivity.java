@@ -29,7 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
     public Button button1;
     public Button button2;
+    public Button button3;
     String mCurrentPhotoPath;
+    public int topflag = 0;
+    public int botflag = 0;
 
     public void init(){
         button1 = (Button)findViewById(R.id.button);
@@ -49,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(choice);
             }
         });
+
+        button3 = (Button)findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent cate = new Intent(MainActivity.this, CategorizingScreen.class);
+                startActivity(cate);
+
+            }
+        });
     }
 
 
@@ -61,10 +74,9 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
 
-        final Intent takePicture = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
 
         final Intent pickPhoto= new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-
         ViewPager viewPagerMain = (ViewPager) findViewById(R.id.pagerMain);
         viewPagerMain.setAdapter(new MainPagerAdapter(this));
 
@@ -73,9 +85,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent intent = getIntent();
+                intent.getIntExtra("topflag", topflag);
+                intent.getIntExtra("botflag", botflag);
 
-                //startActivity(takePicture);
-                //startActivity(TakenPhoto);
                 dispatchTakePictureIntent();
             }
         });
@@ -123,6 +136,9 @@ public class MainActivity extends AppCompatActivity {
 
     private File createImageFile() throws IOException {
         // Create an image file name
+
+
+        ///remember to set flag to 0 after done. Top/Bottom.
         String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String imageFileName = "JPEG" + timeStamp + "_";
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
