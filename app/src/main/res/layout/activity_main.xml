@@ -37,7 +37,7 @@
 
 
     <Button
-        android:text="Closet"
+        android:text="Avatar"
         android:id="@+id/button"
         android:layout_gravity="bottom|left"
         android:layout_height="65dp"
