@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     String mCurrentPhotoPath;
     public int topflag = 0;
     public int botflag = 0;
-
+    String imageFileName = "";
     public void init(){
         button2 = (Button)findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -71,15 +71,12 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPagerMain = (ViewPager) findViewById(R.id.pagerMain);
         viewPagerMain.setAdapter(new MainPagerAdapter(this));
 
-       FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
+
+
+        FloatingActionButton takePhotoButton = (FloatingActionButton) findViewById(R.id.floatingActionButton6);
         takePhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-                Intent intent = getIntent();
-                intent.getIntExtra("topflag", topflag);
-                intent.getIntExtra("botflag", botflag);
 
 
                 dispatchTakePictureIntent();
@@ -130,14 +127,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         ///remember to set flag to 0 after done. Top/Bottom.
-        String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-        String imageFileName = "JPEG" + timeStamp + "_";
+        String timeStamp = new SimpleDateFormat("MMddHHmmss").format(new Date());
+        if(topflag == 1){
+             imageFileName = "Top" + timeStamp + "_";
+        }
+        else if(botflag ==1){
+             imageFileName = "Bot" + timeStamp + "_";
+        }
+        else{
+            imageFileName = "NoCatego" + timeStamp + "_";
+        }
+
         File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
         File image = File.createTempFile(
                 imageFileName,
                 ".jpg",
                 storageDir
         );
+
+        botflag = 0;
+        topflag = 0;
 
         // Save a file: path for use with ACTION_VIEW intents
         mCurrentPhotoPath = image.getAbsolutePath();
@@ -147,6 +156,10 @@ public class MainActivity extends AppCompatActivity {
     static final int REQUEST_TAKE_PHOTO = 1;
 
     private void dispatchTakePictureIntent() {
+        Intent intent = getIntent();
+        topflag = intent.getIntExtra("topflag", 0);
+        botflag = intent.getIntExtra("botflag", 0);
+       
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         // Ensure that there's a camera activity to handle the intent
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
