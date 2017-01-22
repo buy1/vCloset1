@@ -8,8 +8,19 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.baiwen.vcloset.GalleryOfClothing">
-<ScrollView
+    tools:context="com.example.baiwen.vcloset.GalleryOfClothing"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Categorized Inventory"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_height="60dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ScrollView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
@@ -22,12 +33,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             >
-            <ImageButton
-                android:layout_width="107dp"
-                android:layout_height="107dp"
-                android:id="@+id/buttonA1"
-                android:background="@drawable/cat1"
-                />
 
         </TableRow>
 
