@@ -36,38 +36,6 @@
         app:rippleColor="?android:attr/colorBackgroundCacheHint" />
 
 
-    <Button
-        android:text="Avatar"
-        android:id="@+id/button"
-        android:layout_gravity="bottom|left"
-        android:layout_height="65dp"
-        android:layout_width="128dp"
-        android:theme="@style/MyButton"
-        android:backgroundTint="@color/white"
-        android:layout_margin="@dimen/fab_margin"
-        android:elevation="0dp"
-        style="@style/MyButton" />
-
-    <Button
-    android:text="Fitting Room"
-    android:layout_height="65dp"
-    android:id="@+id/button2"
-    android:layout_margin="@dimen/fab_margin"
-    android:layout_gravity="bottom|right"
-    android:backgroundTint="@color/white"
-    android:layout_width="128dp"
-    android:theme="@style/MyButton"
-    style="@style/MyButton" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/floatingActionButton6"
-        android:layout_width="69dp"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/blackcamaraicon"
-        android:layout_gravity="top|right"
-        app:backgroundTint="@android:color/transparent"
-        android:layout_height="71dp" />
-
     <android.support.v4.view.ViewPager
         android:id="@+id/pagerMain"
         android:layout_width="wrap_content"
@@ -88,6 +56,27 @@
         android:theme="@style/MyButton"
         style="@style/MyButton"
         android:layout_width="65dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton6"
+        android:layout_width="69dp"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/blackcamaraicon"
+        android:layout_gravity="top|right"
+        app:backgroundTint="@android:color/transparent"
+        android:layout_height="71dp" />
+
+    <Button
+    android:text="Fitting Room"
+    android:layout_height="65dp"
+    android:id="@+id/button2"
+    android:layout_margin="@dimen/fab_margin"
+    android:layout_gravity="bottom|right"
+    android:backgroundTint="@color/white"
+    android:layout_width="wrap_content"
+    android:theme="@style/MyButton"
+    style="@style/MyButton"
+        android:gravity="center_vertical|center_horizontal|center" />
 
 
 </android.support.design.widget.CoordinatorLayout>

@@ -28,7 +28,6 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button button1;
     public Button button2;
     public Button button3;
     String mCurrentPhotoPath;
@@ -36,15 +35,6 @@ public class MainActivity extends AppCompatActivity {
     public int botflag = 0;
 
     public void init(){
-        button1 = (Button)findViewById(R.id.button);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent show = new Intent(MainActivity.this, AvatarChoice.class);
-                startActivity(show);
-            }
-        });
-
         button2 = (Button)findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
