@@ -18,5 +18,10 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_height="400dp"
+        android:layout_width="400dp">
 
+    </ImageView>
 </RelativeLayout>

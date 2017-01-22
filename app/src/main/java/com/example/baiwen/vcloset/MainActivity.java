@@ -176,13 +176,12 @@ public class MainActivity extends AppCompatActivity {
 
                     Bitmap photo = (Bitmap) data.getExtras().get("data");
 
-
+                    Intent photoview = new Intent(this, PhotoViewer.class);
+                    photoview.putExtra("bitmapimage", photo);
+                    startActivity(photoview);
                     // Setting image image icon on the imageview
 
-                    ImageView imageView = (ImageView) this
-                            .findViewById(R.id.TestImage);
 
-                    imageView.setImageBitmap(photo);
 
                     break;
 
