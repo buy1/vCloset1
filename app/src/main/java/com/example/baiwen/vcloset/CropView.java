@@ -1,7 +1,7 @@
 package com.example.baiwen.vcloset;
 
 /**
- * Created by Kraken on 1/21/17.
+ * Created by Kraken on 1/21/17. blah blah blah test
  */
 
 import android.app.AlertDialog;
